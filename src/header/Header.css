@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.headerContainer {
+    width: 100%;
+    position: relative;
+    height: 450px;
+}
+
+.headerImage {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 32px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: #fff;
+    padding: 35px 8px;
+    background-color: gray;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 32px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: #fff;
+    padding: 35px 8px;
+    background-color: gray;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.contentContainer {
+    transform: translate(150%,-10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    line-height: 50px;
+}
+
+.contentContainer h3 {
+    font-size: 25px;
+    font-weight: 50;
+}
+
+.contentContainer h1 {
+    font-size: 50px;
+}
+
+.contentContainer h5 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.contentContainer button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 768px) {
+    .contentContainer {
+        right: 25%;
+    }
+
+    .contentContainer h3 {
+        font-size: 18px;
+    }
+
+    .contentContainer h1 {
+        font-size: 35px;
+    }
+
+    .contentContainer h5 {
+        font-size: 15px;
+    }
+}
